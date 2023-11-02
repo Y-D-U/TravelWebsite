@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kannur Traveller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Racing+Sans+One&family=Raleway&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .home{
+            border:2px solid blue;
+            height: 88vh;
+            background-image:url("https://www.keralatourism.org/images/eco-tourism/destinations/Paithalmala1.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+        }
+
+        .home header{
+            display: inline-block;
+            color:white;
+            
+            letter-spacing: 9px;
+        }
+
+        .home nav{
+            display: inline-block;
+            position: relative;
+            left:49vw;
+        }
+
+        .home nav ul{
+            list-style: none;
+            display: flex;
+        }
+
+        .home nav ul a{
+            text-decoration: none;
+            color:white;
+            padding:5px;
+            font-size:larger;
+        }
+        .home nav ul a:hover{
+            color:black;
+            
+        }
+        .home .inquiry{
+            
+            position:relative;
+            height:40vh;
+            top:25vh;
+        }
+        .home .inquiry h1{
+            position:relative;
+            position: relative;
+            color: white;
+            left:40vw;
+            top:98px;
+        }
+        .home .inquiry form{
+            position: relative;
+            left: 26vw;
+            top: 18vh;
+        }
+        .home .inquiry form input{
+            
+            padding: 12px;
+            margin: 7px;
+        }
+        .home .inquiry form input[type=submit]{
+            transition: all 0.1s ease-in-out;
+        }
+        .home .inquiry form input[type=submit]:hover{
+            background-color: black;
+            color:white;
+            transform:scale(1.2);
+        }
+        .services{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top:10vh;
+            padding:10px;
+            line-height: 29px;
+        }
+        .services h2{
+            margin:15px;
+        }
+
+        .hotels {
+            text-align: center;
+            position: relative;
+            top:16vh;
+            
+            
+            
+        }
+        .hotel-container{
+            margin:5px;
+            position: relative;
+            left:219px;
+            /*border:2px solid red;*/
+            display: flex;
+            justify-content: center;
+            width:70%;
+            /*height:115vh;*/
+            flex-wrap: wrap;
+        }
+        .hotel-container .hotel{
+            width:30%;
+            
+            border:2px solid black;
+            border-radius: 5px;
+            margin:13px;
+            height: 72vh;
+            overflow: hidden;
+            box-shadow: 4px 7px 5px grey;
+            
+        }
+        .hotel-container .hotel img{
+            width:100%;
+            height:50%;
+            transition:all 0.1s ease-in ;
+            
+        }
+        .hotel-container .hotel img:hover{
+            transform: scale(1.2);
+        }
+        .hotel-container .hotel .hotel-contents{
+            /*height:30%;*/
+           /* border:2px solid yellow;*/
+            display: flex;
+            flex-direction: column;
+            padding:5px;
+            align-items: flex-start;
+            text-align:left;
+            row-gap: 5px;
+
+        }
+        .hotel-container .hotel .hotel-contents p{
+            /*line-height: 10px;*/
+        }
+        .hotel-container .hotel .hotel-contents button{
+            position: relative;
+            border-radius: 5px;
+            padding: 3px;
+            background-color: #e7e7e7;
+            top: 3px;
+            border:none;
+            transition:all 0.1s ease-in-out;
+        }
+        .hotel-container .hotel .hotel-contents button:hover{
+            background-color: #55da46;
+            transform:scale(1.2);
+            /*transform:rotate(10deg);*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="home">
+    <header>
+        THE KANNUR TRAVELLER
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#hotels">Hotels</a></li>
+            <li><a href="#">Contact Us</a></li>
+            
+        </ul>
+
+    </nav>
+
+    <div class="inquiry">
+
+        <h1>Explore The Beauty of Cannanore</h1>
+        <form action="#">
+            <input type="date" placeholder="Enter boarding date">
+            <input type="date" placeholder="Enter Departure date">
+            <input type="number" placeholder="Number of adults">
+            <input type="number" placeholder="Number of children">
+            <input id="btton" type="submit" value="BOOK NOW">
+        </form>
+
+    </div>
+
+    </div>
+    <div class="services" id="services">
+        <h2>Our Services</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed maxime consequatur incidunt harum? Tempora quasi sint enim aliquam quidem optio obcaecati, illum voluptas dolore molestias natus, impedit quae sunt quas.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, veritatis quas beatae exercitationem tempora quis nihil sapiente debitis nisi alias fuga excepturi optio fugit nemo quibusdam totam placeat blanditiis aliquid.
+            Repellendus veniam aliquid fugit, ratione delectus quo, nobis, magnam corporis dolores quasi excepturi debitis accusantium perspiciatis! Eaque eligendi dolores minima dolorum, quo molestias repellendus fugit aliquam a deleniti neque! Sapiente.
+        </p>
+    </div>
+
+    <div class="hotels" id="hotels">       
+        <h2>Hotels</h2>
+        <div class="hotel-container">
+            <div class="hotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/185273865.jpg?k=d07ff8a28015a261eca153b3253af76153ae616eb2b02baf4fac73e7a042b742&o=&hp=1" alt="room">
+                <div class="hotel-contents">
+                    <h2>Hotel Lake Park</h2>
+                    <h3>1000/nyt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, sequi modi, libero assumenda aperiam dolor culpa, eos alias incidunt vero quis corrupti excepturi? Libero, et quos consectetur officia debitis fugit.</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="hotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/216740925.jpg?k=70f63256618cb25c3f5e4a31451691de20ce907ce02255925cb71181eb1ffa7e&o=&hp=1" alt="room">
+                <div class="hotel-contents">
+                    <h2>Royal Inn</h2>
+                    <h3>1000/nyt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, sequi modi, libero assumenda aperiam dolor culpa, eos alias incidunt vero quis corrupti excepturi? Libero, et quos consectetur officia debitis fugit.</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="hotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/117719193.jpg?k=205be326c648f6d862e367350a4d5e68c6e3528aedeed35377df7dbb2e58672e&o=&hp=1" alt="room">
+                <div class="hotel-contents">
+                    <h2>Green Meridian</h2>
+                    <h3>1000/nyt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, sequi modi, libero assumenda aperiam dolor culpa, eos alias incidunt vero quis corrupti excepturi? Libero, et quos consectetur officia debitis fugit.</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="hotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/117719189.jpg?k=4ade6bbbb1e147194d7f481ff62d26e6f17f8acd175b3d301711e29090a958fe&o=&hp=1" alt="room">
+                <div class="hotel-contents">
+                    <h2>Peace Out</h2>
+                    <h3>1000/nyt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, sequi modi, libero assumenda aperiam dolor culpa, eos alias incidunt vero quis corrupti excepturi? Libero, et quos consectetur officia debitis fugit.</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="hotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/331355130.jpg?k=02833ad93fbe2e6d858da1aa9de23fbc8dfc7016ff082b53adb2b4e2a669dfe7&o=&hp=1" alt="room">
+                <div class="hotel-contents">
+                    <h2>Hotel River View</h2>
+                    <h3>1000/nyt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, sequi modi, libero assumenda aperiam dolor culpa, eos alias incidunt vero quis corrupti excepturi? Libero, et quos consectetur officia debitis fugit.</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="hotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/488890103.jpg?k=f319a5877ffe339278ca2316a7e770a71546b5b02e1d8d79a0037eb4fc527431&o=&hp=1" alt="room">
+                <div class="hotel-contents">
+                    <h2>Joseph's Inn</h2>
+                    <h3>1000/nyt</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, sequi modi, libero assumenda aperiam dolor culpa, eos alias incidunt vero quis corrupti excepturi? Libero, et quos consectetur officia debitis fugit.</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
